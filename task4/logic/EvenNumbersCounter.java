@@ -13,7 +13,7 @@ public class EvenNumbersCounter {
      * @param numbers array of numbers entered.
      * @return boolean, if true, it means there are even numbers more than two.
      */
-    public boolean isEvenNumbersMoreThanTwo(int[] numbers) {
+    public boolean isEvenNumbersMoreThanTwo(int... numbers) {
         int counterEvenNumbers = 0;
         for (int element : numbers) {
             if (element % 2 == 0) {
