@@ -20,7 +20,8 @@ public class Runner {
     public static void main(String[] args) {
         ConsoleOutput consoleOutput = new ConsoleOutput();
         DataScanner dataScanner = new DataScanner(consoleOutput);
-        int[] numbers = dataScanner.inputNumbers();
+        int amountNumbersToInput = 4;
+        int[] numbers = dataScanner.inputNumbers(amountNumbersToInput);
         EvenNumbersCounter evenNumbersCounter = new EvenNumbersCounter();
         boolean isEvenNumbersMoreThanTwo = evenNumbersCounter.isEvenNumbersMoreThanTwo(numbers);
         consoleOutput.printResultMessage(isEvenNumbersMoreThanTwo);
