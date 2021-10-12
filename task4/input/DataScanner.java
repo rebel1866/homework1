@@ -22,9 +22,8 @@ public class DataScanner {
      *
      * @return int array, with numbers entered.
      */
-    public int[] inputNumbers() {
+    public int[] inputNumbers(int amountNumbersToInput) {
         Scanner scanner = new Scanner(System.in);
-        int amountNumbersToInput = 4;
         int[] numbers = new int[amountNumbersToInput];
         for (int i = 0; i < amountNumbersToInput; i++) {
             consoleOutput.printInputRequestMessage(i + 1);
